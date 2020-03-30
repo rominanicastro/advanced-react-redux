@@ -11,6 +11,7 @@ class CommentList extends Component {
     render() {
         return (
             <div>
+                <h4>CommentList</h4>
                 <ul>
                     {this.renderComments()}
                 </ul>
@@ -23,4 +24,5 @@ function mapStateToProps(state) {
     return { comments: state.comments };
 }
 
+// connect is a perfect example of high order component
 export default connect(mapStateToProps)(CommentList);
